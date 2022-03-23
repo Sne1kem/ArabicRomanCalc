@@ -158,7 +158,7 @@ public class Main {
         return -1;
     }
     public static void retranslator (int value) {
-        String[] roman = { "0", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
+        String[] roman = {"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
                 "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX", "XXXI", "XXXII", "XXXIII", "XXXIV", "XXXV", "XXXVI", "XXXVII", "XXXVIII", "XXXIX", "XL",
                 "XLI", "XLII", "XLIII", "XLIV", "XLV", "XLVI", "XLVII", "XLVIII", "XLIX", "L", "LI", "LII", "LIII", "LIV", "LV", "LVI", "LVII", "LVIII", "LIX", "LX",
                 "LXI", "LXII", "LXIII", "LXIV", "LXV", "LXVI", "LXVII", "LXVIII", "LXIX", "LXX",
@@ -167,7 +167,7 @@ public class Main {
                 "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"
         };
         try {
-            System.out.println(roman[value]);
+            System.out.println(roman[value-1]);
         } catch (Exception ex){
             answer(5);
         }
@@ -187,7 +187,7 @@ public class Main {
                 System.out.println("You have more then 2 values in operation");
                 break;
             case 5:
-                System.out.println("The answer is negative, which is not possible in Roman system");
+                System.out.println("The answer is negative or 0, which is not possible in Roman system");
                 break;
             case 6:
                 System.out.println("The format of mathematics operation does not possible in this calculator, only 2 numbers with operation");
